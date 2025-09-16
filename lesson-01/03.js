@@ -5,4 +5,17 @@
 */
 
 // your code
-let sum
+let sum = 0;
+const MIN_VALUE_03 = 1;
+const MAX_VALUE_03 = 20;
+let current_03 = MIN_VALUE_03;
+
+while (current_03 <= 20 ) {
+  if (current_03 % 2 === 1)
+  sum = sum + current_03;
+  current_03 = current_03 + 1;
+}
+
+console.log("сумма всех нечетных чисел от 1 до 20:", sum);
+
+

@@ -6,4 +6,13 @@
 */
 
 // your code
-let factorial
+let factorial = 1;
+const MIN_VALUE_02 = 1;
+const MAX_VALUE_02 = 10;
+let current_02 = MIN_VALUE_02;
+
+while (current_02 <= MAX_VALUE_02) {
+factorial = factorial * current_02;
+current_02 = current_02 + 1;
+}
+console.log("факториал числа 10 =", factorial);
