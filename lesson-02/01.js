@@ -15,7 +15,7 @@ const hasTemporaryPass = true
 
 let isAccess = (isAdmin || isVerifiedUser ) && (hasSpecialPermission || hasTemporaryPass)
 
-if (isAccess = true) {
+if (isAccess === true) {
             alert('Доступ получен!')
     isAccess = true
 } else {
