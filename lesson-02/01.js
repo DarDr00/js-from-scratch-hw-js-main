@@ -13,14 +13,14 @@ const isVerifiedUser = true
 const hasSpecialPermission = false
 const hasTemporaryPass = true
 
-let isAccess = (isAdmin || hasSpecialPermission ) && (isVerifiedUser || hasTemporaryPass)
+const isAccess = (isAdmin || isVerifiedUser ) && (hasSpecialPermission || hasTemporaryPass)
 
-if (isAccess === true) {
+if (isAccess) {
             alert('Доступ получен!')
     
 } else {
-                alert('Доступ не может быть предоставлен!')
-            }
+            alert('Доступ не может быть предоставлен!')
+        }
 
 
 // your code
