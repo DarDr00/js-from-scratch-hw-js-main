@@ -16,9 +16,9 @@ const hasTemporaryPass = false;
 let isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
 
 if (isAccess) {
-    alert('Доступ получен!');
+    console.log("Доступ получен!");
 } else {
-    alert('Доступ не может быть предоставлен!');
+    console.log("Доступ не может быть предоставлен!");
 }
 
 // your code
