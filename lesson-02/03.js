@@ -8,16 +8,25 @@ const score = 70
 let grade
 
 
-while (score >= 0 && score <= 100) {
     
-    if (score >= 0 && score <= 49){
-        grade === 'F'
+    if (score >= 0 && score <= 49) {
+        grade = 'F'
         console.log ("Ваша оценка: " + grade)
-    } else if (score >= 50 && score <= 69){
-        grade === 'D'
+    } else if (score >= 50 && score <= 69) {
+        grade = 'D'
         console.log ("Ваша оценка: " + grade)
-    } else if (score >= 70 && score <= 79){
-        grade === 'C'
-        console.log ("Ваша оценка: " + grade) }
+    } else if (score >= 70 && score <= 79) {
+        grade = 'C'
+        console.log ("Ваша оценка: " + grade) 
+    } else if (score >= 80 && score <= 89) {
+        grade = 'B'
+        console.log ("Ваша оценка: " + grade) 
+    } else if (score >= 90 && score <= 100) {
+        grade = 'A'
+        console.log ("Ваша оценка: " + grade) 
+    } else {
+        console.log ("Ваc невозможно оценить") }
+    
+
         
 
