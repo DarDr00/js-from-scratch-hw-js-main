@@ -17,5 +17,9 @@ let isAccess
 
 // your code
 
-isAccess = (isAdmin || isVerifiedUser) && (hasSpecialPermission || hasTemporaryPass);
+if(isAdmin === false && isVerifiedUser === false ){
+  isAccess = false
+}else if (hasSpecialPermission === false && hasTemporaryPass === false){
+  isAccess = false
+} else isAccess = true 
 
