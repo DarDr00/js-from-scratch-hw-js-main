@@ -2,8 +2,7 @@
 
 function calculateAverage(x, y) {
    
-       average = (x + y) / 2;
-       return average
+       return (x + y) / 2;
 }
 
 let finalAverage = calculateAverage (-6, 1005) 
