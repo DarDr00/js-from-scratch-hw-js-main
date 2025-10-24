@@ -28,11 +28,12 @@ const array = [1, 2, 3, 4, 5]
 const filter = (array, callback) => {
   const result = [];
 
-  for (const i in array) {
-  const finArray = array[i];
+  for (let i = 0; i < array.length; i++) {
+  const element = array[i];
+  const index = i;
   
-  if (callback (finArray, i)) {
-    result.push(finArray)
+  if (callback (element, index)) {
+    result.push(element)
   }
 }
 return result

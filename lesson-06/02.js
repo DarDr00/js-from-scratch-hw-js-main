@@ -28,9 +28,9 @@ const array = [1, 2, 3, 4, 5];
 const map = (array, callback) => {
   const newArray = [];
 
-  for (i = 0; i < array.length; i++) {
+  for (let i = 0; i < array.length; i++) {
     const element = array[i];
-    const index = [i];
+    const index = i;
     const newWlement = callback (element, index);
     newArray.push(newWlement)
   }
